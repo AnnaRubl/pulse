@@ -2,6 +2,7 @@
     min-height: 650px;
     padding: 21px 0 93px 0;
     background: url(../img/main.jpg) center (center/cover) no-repeat;
+    background-attachment: fixed;
     &__wrapper{
         display: flex;
         flex-direction: column;
@@ -37,7 +38,6 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 100%;
-        text-align: center;
         color: #fff;
         img {
             display: block;
@@ -54,6 +54,9 @@
             color: #ffffff;
             text-transform: uppercase;
             text-decoration: underline;
+            &:active {
+                color: $main-color;
+            }
         }
     }
 }
@@ -96,5 +99,11 @@
             flex-wrap: nowrap;
             flex-direction: column;
         }
+        &__icon{
+            width: 100%;
+            margin-bottom: 15px;
+        }
     }
 }
+
+

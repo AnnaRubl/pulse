@@ -8,6 +8,19 @@
     font-weight: 500;
     text-transform: uppercase;
     color: #ffffff;
+    box-shadow: inset 4px -4px 5px rgba(57, 0, 0, 0.12);
+    background-image: linear-gradient(to top, $main-color 0, #ffa0a0 100%);
+    &:focus {
+        outline:none;
+    }
+    &:hover {
+        box-shadow: 3px 3px 15px $main-color;
+        border: none;
+    }
+    &:active {
+        box-shadow: 3px 3px 5px $main-color;
+        background-image: linear-gradient(to bottom, #ffa0a0 0, $main-color 100%);
+    }
     &_main {
         margin-top: 67px;
         width: 300px;

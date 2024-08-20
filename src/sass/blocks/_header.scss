@@ -28,6 +28,9 @@
             color: #ffffff;
             text-decoration: none;
         }
+        &:active {
+            color: $main-color;
+        }
     }
     &__contacts{
         display: flex;
