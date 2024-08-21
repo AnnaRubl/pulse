@@ -22,7 +22,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+32789628044" class="header__phone">+3 (278) 962-80-44</a>
-                    <button class="button">request a call</button>
+                    <button data-modal="consultation" class="button">request a call</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <button class="button button_main">order a CONSULTATION</button>
+                <button data-modal="consultation" class="button button_main">order a CONSULTATION</button>
                 <div class="promo__link">
                     or
                     <a href="#">GO TO CATALOG</a>
@@ -88,7 +88,7 @@
                 Just fill out the application form <br> and we will call you back within 10 minutes.
             </div>
 
-        <form class="feed-form" action="#">
+        <form id="consultation-form" class="feed-form" action="#">
             <input name="name" required placeholder="Your name" type="text">
             <input name="phone" required placeholder="Your phone number" type="number">
             <input name="email" required placeholder="Your e-mail" type="email">
@@ -128,7 +128,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">FT6 monitor</div>
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
@@ -203,13 +203,13 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Heart rate monitor Polar FT4</div>
+                            <div class="catalog-item__subtitle">86 run FT4</div>
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
                         <ul class="catalog-item__list">
                             <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of target training heart rate zones;</li>
+                            <li>You will see an informative graphic indicator of targets training heart rate zones;</li>
                             <li>You will also see information about calorie expenditure during training;</li>
                             <li>You will be able to view data for 10 training sessions.</li>
                             <a href="#" class="catalog-item__back">BACK</a>
@@ -253,7 +253,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Polar GTU784</div>
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
@@ -442,9 +442,44 @@
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Just fill out the application form</div>
+            <div class="modal__descr">and we will call you back within 10 minutes</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Your name" type="text">
+                <input name="phone" placeholder="Your phone number" type="number">
+                <input name="email" placeholder="Your e-mail" type="email">
+    
+                <button class="button button_submit">order a CONSULTATION</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Your order:</div>
+            <div class="modal__descr">Polar FT1 heart rate monitor</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Your name" type="text">
+                <input name="phone" placeholder="Your phone number" type="number">
+                <input name="email" placeholder="Your e-mail" type="email">
+    
+                <button class="button button_submit">Buy</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Thank you for your application!</div>
+            <div class="modal__descr">Our manager will contact you shortly!</div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
