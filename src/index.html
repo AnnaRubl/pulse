@@ -6,11 +6,12 @@
     <title>Pulse</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -61,17 +62,17 @@
             </h3>
             <div class="advantages__icons">
                 <div class="advantages__icon">
-                    <img src="icons/advantages/cup.png" alt="cup">
+                    <img src="icons/advantages/cup.png" alt="cup" class="animate__animated animate__rubberBand wow animate__infinite" data-wow-duration="2s" data-wow-delay="0.1s">
                     <div class="advantages__subheader">Let's share our experiences</div>
                     <div class="advantages__text">Our staff are always ready to share their experience, because they themselves run half marathons, swim across the Bosphorus and prepare for triathlon competitions!</div>
                 </div>
                 <div class="advantages__icon">
-                    <img src="icons/advantages/heart.png" alt="heart">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subheader">We care about health</div>
                     <div class="advantages__text">We work to ensure that your sports activities benefit your health and bring joy to you and your loved ones!</div>
                 </div>
                 <div class="advantages__icon">
-                    <img src="icons/advantages/shoe.png" alt="shoe">
+                    <img src="icons/advantages/shoe.png" alt="shoe" class="animate__animated animate__swing wow animate__infinite" data-wow-duration="2s" data-wow-delay="0.1s">
                     <div class="advantages__subheader">We teach running</div>
                     <div class="advantages__text">We help with teaching the correct running technique! We are friends with the largest running school in London - <a href="#">I LOVE RUNNING.</a></div>  
                 </div>
@@ -90,7 +91,7 @@
 
         <form id="consultation-form" class="feed-form" action="#">
             <input name="name" required placeholder="Your name" type="text">
-            <input name="phone" required placeholder="Your phone number" type="number">
+            <input name="phone" required placeholder="Your phone number">
             <input name="email" required placeholder="Your e-mail" type="email">
 
             <button class="button button_submit">order a CONSULTATION</button>
@@ -98,7 +99,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -112,7 +113,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -124,7 +125,7 @@
             </ul>
 
             <div class="catalog__content catalog__content_active">
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="0.1s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -132,13 +133,15 @@
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie expenditure during training;</li>
-                            <li>You will be able to view data for 10 training sessions.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>You will hear a sound notification about the desired heart rate during training;</li>
+                                <li>You will see an informative graphic indicator of target training heart rate zones;</li>
+                                <li>You will also see information about calorie expenditure during training;</li>
+                                <li>You will be able to view data for 10 training sessions.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">BACK</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -149,7 +152,7 @@
                         <button class="button button_mini">BUY</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="0.2s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -157,13 +160,15 @@
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie expenditure during training;</li>
-                            <li>You will be able to view data for 10 training sessions.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>You will hear a sound notification about the desired heart rate during training;</li>
+                                <li>You will see an informative graphic indicator of target training heart rate zones;</li>
+                                <li>You will also see information about calorie expenditure during training;</li>
+                                <li>You will be able to view data for 10 training sessions.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">BACK</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -174,7 +179,7 @@
                         <button class="button button_mini">BUY</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="0.3s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -182,13 +187,15 @@
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie expenditure during training;</li>
-                            <li>You will be able to view data for 10 training sessions.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>You will hear a sound notification about the desired heart rate during training;</li>
+                                <li>You will see an informative graphic indicator of target training heart rate zones;</li>
+                                <li>You will also see information about calorie expenditure during training;</li>
+                                <li>You will be able to view data for 10 training sessions.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">BACK</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -199,7 +206,7 @@
                         <button class="button button_mini">BUY</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="0.4s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -207,13 +214,15 @@
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of targets training heart rate zones;</li>
-                            <li>You will also see information about calorie expenditure during training;</li>
-                            <li>You will be able to view data for 10 training sessions.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>You will hear a sound notification about the desired heart rate during training;</li>
+                                <li>You will see an informative graphic indicator of targets training heart rate zones;</li>
+                                <li>You will also see information about calorie expenditure during training;</li>
+                                <li>You will be able to view data for 10 training sessions.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">BACK</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -224,7 +233,7 @@
                         <button class="button button_mini">BUY</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="0.5s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -232,13 +241,15 @@
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie expenditure during training;</li>
-                            <li>You will be able to view data for 10 training sessions.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>You will hear a sound notification about the desired heart rate during training;</li>
+                                <li>You will see an informative graphic indicator of target training heart rate zones;</li>
+                                <li>You will also see information about calorie expenditure during training;</li>
+                                <li>You will be able to view data for 10 training sessions.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">BACK</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -249,7 +260,7 @@
                         <button class="button button_mini">BUY</button>
                     </div>
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="0.6s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -257,13 +268,15 @@
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie expenditure during training;</li>
-                            <li>You will be able to view data for 10 training sessions.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>You will hear a sound notification about the desired heart rate during training;</li>
+                                <li>You will see an informative graphic indicator of target training heart rate zones;</li>
+                                <li>You will also see information about calorie expenditure during training;</li>
+                                <li>You will be able to view data for 10 training sessions.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">BACK</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -284,13 +297,15 @@
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie expenditure during training;</li>
-                            <li>You will be able to view data for 10 training sessions.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>You will hear a sound notification about the desired heart rate during training;</li>
+                                <li>You will see an informative graphic indicator of target training heart rate zones;</li>
+                                <li>You will also see information about calorie expenditure during training;</li>
+                                <li>You will be able to view data for 10 training sessions.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">BACK</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -312,13 +327,15 @@
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie expenditure during training;</li>
-                            <li>You will be able to view data for 10 training sessions.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>You will hear a sound notification about the desired heart rate during training;</li>
+                                <li>You will see an informative graphic indicator of target training heart rate zones;</li>
+                                <li>You will also see information about calorie expenditure during training;</li>
+                                <li>You will be able to view data for 10 training sessions.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">BACK</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -337,13 +354,15 @@
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie expenditure during training;</li>
-                            <li>You will be able to view data for 10 training sessions.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>You will hear a sound notification about the desired heart rate during training;</li>
+                                <li>You will see an informative graphic indicator of target training heart rate zones;</li>
+                                <li>You will also see information about calorie expenditure during training;</li>
+                                <li>You will be able to view data for 10 training sessions.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">BACK</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -362,13 +381,15 @@
                             <div class="catalog-item__descr">For the first steps in training based on heart rhythm</div>
                             <a href="#" class="catalog-item__link">Read more</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphic indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie expenditure during training;</li>
-                            <li>You will be able to view data for 10 training sessions.</li>
+                        <div class="catalog-item__list">
+                            <ul>
+                                <li>You will hear a sound notification about the desired heart rate during training;</li>
+                                <li>You will see an informative graphic indicator of target training heart rate zones;</li>
+                                <li>You will also see information about calorie expenditure during training;</li>
+                                <li>You will be able to view data for 10 training sessions.</li>
+                            </ul>
                             <a href="#" class="catalog-item__back">BACK</a>
-                        </ul>
+                        </div>
                     </div>
                     <hr>
                     <div class="catalog-item__footer">
@@ -387,7 +408,7 @@
         <div class="container">
             <div class="reviews__content">
                 <h2 class="title title_white">Customer Reviews</h2>
-                <div class="reviews__wrapper">
+                <div class="reviews__wrapper animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/feed_1.png" alt="feed_1" class="reviews__img">
                     <div class="reviews__item">
                         <div class="reviews__title">Emily Dong</div>
@@ -400,8 +421,8 @@
                         Thank you, RunSmart!</div>
                     </div>
                 </div>
-                <hr>
-                <div class="reviews__wrapper">
+                
+                <div class="reviews__wrapper animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/feed_2.png" alt="feed_2" class="reviews__img">
                     <div class="reviews__item">
                         <div class="reviews__title">Mike Posner</div>
@@ -412,8 +433,8 @@
                         I got ready for my first half marathon with them! Thank you!!!</div>
                     </div>
                 </div>
-                <hr>
-                <div class="reviews__wrapper">
+                
+                <div class="reviews__wrapper animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/feed_3.png" alt="feed_3.png" class="reviews__img">
                     <div class="reviews__item">
                         <div class="reviews__title">Dina Lemon</div>
@@ -430,10 +451,10 @@
     </section>
 
     <footer class="footer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.58519585978!2d-0.26640499123951367!3d51.528526201186125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondyn%2C%20Wielka%20Brytania!5e0!3m2!1spl!2spl!4v1724155824280!5m2!1spl!2spl" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.58519585978!2d-0.26640499123951367!3d51.528526201186125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondyn%2C%20Wielka%20Brytania!5e0!3m2!1spl!2spl!4v1724155824280!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="footer__info">
             <address class="footer__addr">London Street Mentzer 34</address>
-            <a class="footer__phone" href="tel:+32789628044" class="header__phone">+3 (278) 962-80-44</a>
+            <a class="footer__phone header__phone" href="tel:+32789628044">+3 (278) 962-80-44</a>
             <div class="footer__social">
                 <a href="#" class="footer__social-item"><img src="icons/facebook.png" alt="facebook"></a>
                 <a href="#" class="footer__social-item"><img src="icons/instagram.png" alt="instagram"></a>
@@ -449,7 +470,7 @@
             <div class="modal__descr">and we will call you back within 10 minutes</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" placeholder="Your name" type="text">
-                <input name="phone" placeholder="Your phone number" type="number">
+                <input name="phone" placeholder="Your phone number">
                 <input name="email" placeholder="Your e-mail" type="email">
     
                 <button class="button button_submit">order a CONSULTATION</button>
@@ -462,7 +483,7 @@
             <div class="modal__descr">Polar FT1 heart rate monitor</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" placeholder="Your name" type="text">
-                <input name="phone" placeholder="Your phone number" type="number">
+                <input name="phone" placeholder="Your phone number">
                 <input name="email" placeholder="Your e-mail" type="email">
     
                 <button class="button button_submit">Buy</button>
@@ -476,10 +497,14 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <a href="#up" class="pageup"><img src="icons/up.svg" alt="up"></a>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
